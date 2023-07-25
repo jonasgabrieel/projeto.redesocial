@@ -2,21 +2,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Iterator;
 
-/**
- * A simple model of a mail server. The server is able to receive
- * mail items for storage, and deliver them to clients on demand.
- * 
- * @author David J. Barnes and Michael Kölling
- * @version 2016.02.29
- */
 public class MailServer
 {
-    // Storage for the arbitrary number of mail items to be stored
-    // on the server.
+    // Armazenamento para o número arbitrário de itens de correio a serem armazenados no servidor.
     private List<MailItem> items;
 
     /**
-     * Construct a mail server.
+     * Construir um servidor de correio.
      */
     public MailServer()
     {
@@ -24,9 +16,9 @@ public class MailServer
     }
 
     /**
-     * Return how many mail items are waiting for a user.
-     * @param who The user to check for.
-     * @return How many items are waiting.
+     * Return quantos itens de correio estão esperando por um usuário..
+     * @param O usuário a ser verificado
+     * @return Quantos itens estão esperando.
      */
     public int howManyMailItems(String who)
     {
@@ -40,10 +32,9 @@ public class MailServer
     }
 
     /**
-     * Return the next mail item for a user or null if there
-     * are none.
-     * @param who The user requesting their next item.
-     * @return The user's next item.
+     * Retorna o próximo item de email para um usuário ou nulo se não houver nenhum.
+     * @param O usuário que está solicitando seu próximo item.
+     * @return O próximo item do usuário.
      */
     public MailItem getNextMailItem(String who)
     {
@@ -59,8 +50,8 @@ public class MailServer
     }
 
     /**
-     * Add the given mail item to the message list.
-     * @param item The mail item to be stored on the server.
+     *Adicione o item de correio fornecido à lista de mensagens.
+     * @param O item de correio a ser armazenado no servidor.
      */
     public void post(MailItem item)
     {
