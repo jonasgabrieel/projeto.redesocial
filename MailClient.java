@@ -1,19 +1,12 @@
-/**
- * A class to model a simple email client. The client is run by a
- * particular user, and sends and retrieves mail via a particular server.
- * 
- * @author David J. Barnes and Michael Kölling
- * @version 2016.02.29
- */
 public class MailClient
 {
-    // The server used for sending and receiving.
+    // O servidor usado para enviar e receber.
     private MailServer server;
-    // The user running this client.
+    // O usuário executando este cliente.
     private String user;
 
     /**
-     * Create a mail client run by user and attached to the given server.
+     * Crie um cliente de e-mail executado pelo usuário e anexado ao servidor fornecido.
      */
     public MailClient(MailServer server, String user)
     {
@@ -22,7 +15,7 @@ public class MailClient
     }
 
     /**
-     * Return the next mail item (if any) for this user.
+     *Devolva o próximo item de correio (se houver) para este usuário.
      */
     public MailItem getNextMailItem()
     {
@@ -30,8 +23,7 @@ public class MailClient
     }
 
     /**
-     * Print the next mail item (if any) for this user to the text 
-     * terminal.
+     * Imprima o próximo item de correio (se houver) para este usuário no terminal de texto.
      */
     public void printNextMailItem()
     {
@@ -45,10 +37,8 @@ public class MailClient
     }
 
     /**
-     * Send the given message to the given recipient via
-     * the attached mail server.
-     * @param to The intended recipient.
-     * @param message The text of the message to be sent.
+     * Envie a mensagem fornecida ao destinatário fornecido por meio do servidor de correio anexado. @param para O destinatário pretendido.
+     @param message O texto da mensagem a ser enviada.
      */
     public void sendMailItem(String to, String message)
     {
