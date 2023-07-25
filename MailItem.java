@@ -1,25 +1,18 @@
-/**
- * A class to model a simple mail item. The item has sender and recipient
- * addresses and a message string.
- * 
- * @author David J. Barnes and Michael Kölling
- * @version 2016.02.29
- */
 public class MailItem
 {
-    // The sender of the item.
+    // O remetente do item.
     private String from;
-    // The intended recipient.
+    //O destinatário pretendido
     private String to;
-    // The text of the message.
+    // O texto da mensagem
     private String message;
 
     /**
-     * Create a mail item from sender to the given recipient,
-     * containing the given message.
-     * @param from The sender of this item.
-     * @param to The intended recipient of this item.
-     * @param message The text of the message to be sent.
+     *Crie um item de correio do remetente para o destinatário especificado,
+     * contendo a mensagem fornecida
+     * @param do remetente deste item.
+     * @param para O destinatário pretendido deste item.
+     * @param message O texto da mensagem a ser enviada.
      */
     public MailItem(String from, String to, String message)
     {
@@ -29,7 +22,7 @@ public class MailItem
     }
 
     /**
-     * @return The sender of this message.
+     * @return O remetente desta mensagem.
      */
     public String getFrom()
     {
@@ -37,7 +30,7 @@ public class MailItem
     }
 
     /**
-     * @return The intended recipient of this message.
+     * @return O destinatário pretendido desta mensagem.
      */
     public String getTo()
     {
@@ -45,7 +38,7 @@ public class MailItem
     }
 
     /**
-     * @return The text of the message.
+     * @return O Texto da mensagem
      */
     public String getMessage()
     {
@@ -53,7 +46,7 @@ public class MailItem
     }
 
     /**
-     * Print this mail message to the text terminal.
+     * Imprima esta mensagem de correio para o terminal de texto.
      */
     public void print()
     {
